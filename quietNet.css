@@ -1,0 +1,23 @@
+.quietNet{
+  color: red;
+  background: blue;
+}
+.qn-hide{
+  display: none !important;
+}
+a.qn-showOriginal{
+  cursor: pointer;
+}
+.qn-replacementText {
+    background: #f7f7f7;
+    padding: 15px;
+    border: 1px solid #eee;
+    color: #4b1161;
+    text-decoration: none;
+    font-size: 14px;
+    clear: both;
+    border-radius: 8px;
+}
+.qn-clear{
+  clear: both;
+}

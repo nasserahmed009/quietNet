@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "QuietNet",
+  "version": "1.0",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "exclude_matches": ["https://twitter.com/*","https://facebook.com/*", "https://www.facebook.com/*"],
+      "css": ["quietNet.css"],
+      "all_frames": true,
+      "js": ["jquery.js","content.js"]
+    },
+    {
+      "matches": ["https://twitter.com/*"],
+      "css": ["quietNet.css"],
+      "all_frames": true,
+      "js": ["jquery.js","contentTwitter.js"]
+    },
+    {
+      "matches": ["https://facebook.com/*", "https://www.facebook.com/*"],
+      "css": ["quietNet.css"],
+      "all_frames": true,
+      "js": ["jquery.js","contentFacebook.js"]
+    }
+  ],
+  "permissions": ["webRequest", "tabs", "<all_urls>"]
+}

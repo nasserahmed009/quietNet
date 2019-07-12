@@ -17,7 +17,17 @@ a.qn-showOriginal{
     font-size: 14px;
     clear: both;
     border-radius: 8px;
+    margin: 10px 0px;
 }
 .qn-clear{
   clear: both;
+}
+.qn-replacementText .qnLogo{
+  width: 25px;
+  vertical-align: middle;
+  margin: auto 10px;
+}
+.qn-replacementText p{
+  margin: 0px;
+  display: inline;
 }

@@ -5,7 +5,6 @@ function qnFindTextAndReplace(word, tweets) {
   word = word.toUpperCase();
   for(tweet of tweets){
     $(tweet).addClass('qn-scanned');
-    console
     if(tweet.textContent.toUpperCase().includes(word)) qnTweet(tweet);
   }
 }

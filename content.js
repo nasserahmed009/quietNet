@@ -1,3 +1,4 @@
+console.log('main script');
 let words =  ["stack", "web", "github", "label", "ahmed", "mohmed", "amr warda", "test", "egypt", "sisi","hello"];
 let id=0;
 
